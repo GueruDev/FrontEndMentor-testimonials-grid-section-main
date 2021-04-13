@@ -42,6 +42,7 @@ img {
 h4 {
     font-weight: 600;
     font-size: 1.575rem;
+    margin: 1rem 0;
 }
 
 .container {
@@ -52,13 +53,22 @@ h4 {
     grid-template-areas: 
     'img nombre'
     'img desc';
+    height: 4rem;
 }
+
 .text{
     color:rgba(212, 212, 212, 0.884); 
 }
+
+h2,
+.position-p{
+    position: relative;
+    bottom: 10px;
+}
 h2 {
     grid-area: nombre;
-}
+
+}   
 
 p{
     grid-area: desc;
