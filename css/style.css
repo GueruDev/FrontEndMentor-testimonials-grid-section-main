@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+body {
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Barlow Semi Condensed';
+    background-color:hsl(210, 46%, 95%) ;
+}
+
+main {
+    width: 1440px;
+    display: grid;
+    grid-template-areas:
+    'cont1 cont1 cont2 cont3'
+    'cont4 cont5 cont5 cont3';
+    grid-gap: 2em;
+}
+#daniel,
+#jonathan,
+#jeanette,
+#patrick,
+#kira {
+    border-radius: 12px;
+    padding: 2em;  
+}
+
+#daniel,
+#jonathan,
+#patrick {
+    color: white;
+}
+
+img {
+    border-radius: 50%;
+    border: 2px solid hsl(0, 0%, 81%) ;
+    grid-area: img;
+}
+
+.img-purple{
+    border: 2px solid hsl(263, 87%, 64%) ;
+}
+h4 {
+    font-weight: 600;
+    font-size: 1.575rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    grid-template-rows: 1em 1em;
+    grid-gap: 1em;
+    grid-template-areas: 
+    'img nombre'
+    'img desc';
+}
+.text{
+    color:rgba(212, 212, 212, 0.884); 
+}
+h2 {
+    grid-area: nombre;
+}
+
+p{
+    grid-area: desc;
+    font-size: 1rem;
+    color: rgba(160, 160, 160, 0.795);
+    text-align: justify;
+}
+
+.white{
+    color:rgb(66, 66, 66);
+}
+
+#daniel {
+    grid-area: cont1;
+    background-color: hsl(263, 55%, 52%);
+}
+
+#jonathan {
+    grid-area: cont2;
+    background-color: hsl(217, 19%, 35%);
+}
+
+#jeanette {
+    grid-area: cont4;
+    background-color: #fff;
+}
+
+#patrick {
+    grid-area: cont5;
+    background-color: hsl(219, 29%, 14%);
+}
+
+#kira {
+    grid-area: cont3;
+    background-color: #fff;
+}
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
