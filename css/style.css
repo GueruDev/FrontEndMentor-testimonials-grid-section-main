@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
 
 body {
+    display:flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
     font-size: 13px;
     font-weight: 500;
     font-family: 'Barlow Semi Condensed';
@@ -21,7 +25,7 @@ main {
 #patrick,
 #kira {
     border-radius: 12px;
-    padding: 2em;  
+    padding: 2em; 
 }
 
 #daniel,
@@ -41,23 +45,29 @@ img {
 }
 h4 {
     font-weight: 600;
-    font-size: 1.575rem;
-    margin: 1rem 0;
+    font-size: 2em;
+    margin: 1em 0;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 9fr;
-    grid-template-rows: 1em 1em;
-    grid-gap: 1em;
+    grid-template-rows: 16px 16px;
+    grid-gap: 16px;
     grid-template-areas: 
     'img nombre'
     'img desc';
-    height: 4rem;
+    height: 64px;
 }
 
 .text{
     color:rgba(212, 212, 212, 0.884); 
+}
+p{
+    grid-area: desc;
+    font-size: 1.3em;
+    color: rgba(160, 160, 160, 0.795);
+    text-align: justify;
 }
 
 h2,
@@ -70,12 +80,6 @@ h2 {
 
 }   
 
-p{
-    grid-area: desc;
-    font-size: 1rem;
-    color: rgba(160, 160, 160, 0.795);
-    text-align: justify;
-}
 
 .white{
     color:rgb(66, 66, 66);
@@ -111,3 +115,46 @@ p{
 
 .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 1450px) {
+    body{
+        font-size: 12px;
+    }    
+}
+@media only screen and (max-width: 1350px) {
+    body{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 1250px) {
+    main {
+        grid-template-areas:
+        'cont1 cont1 cont2'
+        'cont4 cont5 cont5'
+        'cont3 cont3 cont3';
+    }
+}
+@media only screen and (max-width: 850px) {
+    body{
+        font-size: 8px;
+    }
+}
+@media only screen and (max-width: 550px) {
+    body{
+        display: flex;
+        position: relative;
+        top:850px;
+        font-size: 15px;
+        height: none;
+        justify-content: none;
+        align-items: none;
+    }
+    main {
+        grid-template-areas:
+        'cont1'
+        'cont2'
+        'cont3'
+        'cont4'
+        'cont5';
+    }
+}
