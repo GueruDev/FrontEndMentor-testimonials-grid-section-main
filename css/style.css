@@ -161,47 +161,17 @@ h2 {
 }
 @media only screen and (max-width: 840px) {
     body{
-        display: flex;
-        position: relative;
         top:400px;
-        font-size: 15px;
-        height: none;
-        justify-content: none;
-        align-items: none;
-    }
-    main {
-        grid-template-areas:
-        'cont1 cont1 cont2'
-        'cont4 cont5 cont5'
-        'cont3 cont3 cont3';
     }
 }
 @media only screen and (max-width: 783px) {
     body{
-        display: flex;
-        position: relative;
         top:450px;
-        font-size: 15px;
-        height: none;
-        justify-content: none;
-        align-items: none;
-    }
-    main {
-        grid-template-areas:
-        'cont1 cont1 cont2'
-        'cont4 cont5 cont5'
-        'cont3 cont3 cont3';
     }
 }
 @media only screen and (max-width: 750px) {
     body{
-        display: flex;
-        position: relative;
         top:600px;
-        font-size: 15px;
-        height: none;
-        justify-content: none;
-        align-items: none;
     }
     main {
         grid-template-areas:
