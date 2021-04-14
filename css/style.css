@@ -110,23 +110,37 @@ h2 {
     background-color: #fff;
 }
 
-
-
-
 .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+#NO-SUPPORTED{
+    display: none;
+    position: fixed;
+    font-size: 30px;
+    bottom: 400px;
+    text-align: center;
+    color:black;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+/* MEDIA QUERIES RESPONSIVE */
 
 @media only screen and (max-width: 1450px) {
     body{
         font-size: 12px;
     }    
 }
-@media only screen and (max-width: 1350px) {
-    body{
-        font-size: 10px;
-    }
-}
 @media only screen and (max-width: 1250px) {
+    body{
+        display: flex;
+        position: relative;
+        top:200px;
+        font-size: 15px;
+        height: none;
+        justify-content: none;
+        align-items: none;
+    }
     main {
         grid-template-areas:
         'cont1 cont1 cont2'
@@ -134,16 +148,56 @@ h2 {
         'cont3 cont3 cont3';
     }
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 1118px) {
     body{
-        font-size: 8px;
+        top:300px;
     }
+
+@media only screen and (max-width: 906px) {
+    body{
+        top:350px;
+    }
+
 }
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 840px) {
     body{
         display: flex;
         position: relative;
-        top:850px;
+        top:400px;
+        font-size: 15px;
+        height: none;
+        justify-content: none;
+        align-items: none;
+    }
+    main {
+        grid-template-areas:
+        'cont1 cont1 cont2'
+        'cont4 cont5 cont5'
+        'cont3 cont3 cont3';
+    }
+}
+@media only screen and (max-width: 783px) {
+    body{
+        display: flex;
+        position: relative;
+        top:450px;
+        font-size: 15px;
+        height: none;
+        justify-content: none;
+        align-items: none;
+    }
+    main {
+        grid-template-areas:
+        'cont1 cont1 cont2'
+        'cont4 cont5 cont5'
+        'cont3 cont3 cont3';
+    }
+}
+@media only screen and (max-width: 750px) {
+    body{
+        display: flex;
+        position: relative;
+        top:600px;
         font-size: 15px;
         height: none;
         justify-content: none;
@@ -156,5 +210,73 @@ h2 {
         'cont3'
         'cont4'
         'cont5';
+    }
+}
+@media only screen and (max-width: 702px) {
+    body{
+        top:650px;
+    }
+}
+@media only screen and (max-width: 651px) {
+    body{
+        top:700px;
+    }
+}
+@media only screen and (max-width: 578px) {
+    body{
+        top:750px;
+    }
+}
+@media only screen and (max-width: 554px) {
+    body{
+        top:800px;
+    }
+}
+@media only screen and (max-width: 503px) {
+    body{
+        top:850px;
+    }
+}
+@media only screen and (max-width: 485px) {
+    body{
+        top:900px;
+    }
+}
+@media only screen and (max-width: 460px) {
+    body{
+        top:950px;
+    }
+}
+@media only screen and (max-width: 449px) {
+    body{
+        top:1000px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    body{
+        top:1060px;
+    }
+}
+@media only screen and (max-width: 407px) {
+    body{
+        top:1120px;
+    }
+}
+@media only screen and (max-width: 381px) {
+    body{
+        top:1180px;
+    }
+}
+@media only screen and (max-width: 366px) {
+    body{
+        top:1220px;
+    }
+}
+@media only screen and (max-width: 360px) {
+    main{
+        display: none;
+    }
+    #NO-SUPPORTED{
+        display: block;
     }
 }
