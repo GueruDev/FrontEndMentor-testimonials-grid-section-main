@@ -2,7 +2,6 @@
 
 body {
     display:flex;
-    height: 100vh;
     justify-content: center;
     align-items: center;
     font-size: 13px;
@@ -134,12 +133,12 @@ h2 {
 @media only screen and (max-width: 1250px) {
     body{
         display: flex;
-        position: relative;
-        top:200px;
+        /* position: relative;
+        top:200px; */
         font-size: 15px;
-        height: none;
+        /* height: none;
         justify-content: none;
-        align-items: none;
+        align-items: none; */
     }
     main {
         grid-template-areas:
@@ -148,7 +147,7 @@ h2 {
         'cont3 cont3 cont3';
     }
 }
-@media only screen and (max-width: 1118px) {
+/* @media only screen and (max-width: 1118px) {
     body{
         top:300px;
     }
@@ -249,4 +248,4 @@ h2 {
     #NO-SUPPORTED{
         display: block;
     }
-}
+} */
