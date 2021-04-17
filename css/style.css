@@ -123,22 +123,23 @@ h2 {
 }
 
 
-/* MEDIA QUERIES RESPONSIVE */
+/* MEDIA QUERIES RESPONSIVE (Hay más que en el reto porque no me gusta
+el responsive tosco) */
+
+/* DESKTOP */
 
 @media only screen and (max-width: 1450px) {
     body{
         font-size: 12px;
     }    
 }
+
+/* TABLET */
+
 @media only screen and (max-width: 1250px) {
     body{
         display: flex;
-        /* position: relative;
-        top:200px; */
         font-size: 15px;
-        /* height: none;
-        justify-content: none;
-        align-items: none; */
     }
     main {
         grid-template-areas:
@@ -147,30 +148,25 @@ h2 {
         'cont3 cont3 cont3';
     }
 }
-/* @media only screen and (max-width: 1118px) {
+@media only screen and (max-width: 850px) {
     body{
-        top:300px;
+        font-size: 13px;
     }
+}
+@media only screen and (max-width: 640px) {
+    body{
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width: 525px) {
+    body{
+        font-size: 9px;
+    }
+}
 
-@media only screen and (max-width: 906px) {
+@media only screen and (max-width: 500px) {
     body{
-        top:350px;
-    }
-
-}
-@media only screen and (max-width: 840px) {
-    body{
-        top:400px;
-    }
-}
-@media only screen and (max-width: 783px) {
-    body{
-        top:450px;
-    }
-}
-@media only screen and (max-width: 750px) {
-    body{
-        top:600px;
+        font-size: 14px;
     }
     main {
         grid-template-areas:
@@ -181,16 +177,13 @@ h2 {
         'cont5';
     }
 }
-@media only screen and (max-width: 702px) {
-    body{
-        top:650px;
+ @media only screen and (max-width: 375px) {
+body{
+    font-size: 12px;
+
     }
 }
-@media only screen and (max-width: 651px) {
-    body{
-        top:700px;
-    }
-}
+/*
 @media only screen and (max-width: 578px) {
     body{
         top:750px;
@@ -241,11 +234,12 @@ h2 {
         top:1220px;
     }
 }
-@media only screen and (max-width: 360px) {
+ */
+@media only screen and (max-width: 295px) {
     main{
         display: none;
     }
     #NO-SUPPORTED{
         display: block;
     }
-} */
+} 
